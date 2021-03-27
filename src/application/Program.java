@@ -23,10 +23,11 @@ public class Program {
 		//Programa nao conhece a implementacao
 		//Forma de faxer injecao de dependencia sem explicitar a implementacao
 		SellerDao sellerDao = DaoFactory.createSellerDao();
-		
+	
+		System.out.println("=== TEST 1: seller findById ===");
 		Seller seller = sellerDao.findById(3);
-		
 		System.out.println(seller);
+		
 		
 	}
 
